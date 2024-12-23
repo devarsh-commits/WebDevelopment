@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* .div{
+            color: black;
+            background-color: yellow;
+        } */
+         /* this is a class selector */ 
+         /* this is a child selector */
+         div > p {  
+            background-color: rgb(241, 14, 14);
+            color: yellow;
+            
+         }
+         div p{
+            background-color: brown;
+         }
+         #id{
+            background-color: aqua;
+         }
+
+         /* universal selector */
+         *{
+            margin: 0;
+            padding: 0%;
+         }
+        
+         
+         /* pseudo selector */
+         a:visited{
+            color: yellow
+         }
+         a:link{
+            color: green;
+         }
+         a:hover{
+            background-color: yellow;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="div">
+        I am a div
+        <p>I am the best</p>
+        <article><p>i am article</p></article>
+    </div>
+    <div id="id">
+        this is the id selector
+    </div>
+    <a href="https://www.google.com">Google</a>
+    <a href="https://www.instagram.com">Instagram</a>
+</body>
+</html>
