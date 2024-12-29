@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing in html</title>
+    <style>
+       .box{
+        border:2px solid red;
+        width: 80vw; 
+        margin:auto;
+        background-color: aqua;
+       }
+       .container{
+        border: 2px solid red;
+        width:80vw;
+        height: 70vh;
+        margin: 23px auto;
+        font-size:9px;
+        background-color: yellow;
+       }
+       .container p{
+        font-size:2em ;
+        
+
+       }
+       .mycont{
+        box-sizing: border-box;
+        border: 2px solid red;
+        width:80vw;
+        min-height: 10vmax;
+        margin:23px auto;
+        background-color: aquamarine;
+        font-size:1em;
+
+       }
+       .lstcont{
+        /* box-sizing: border-box; */
+        border: 2px solid red;
+        width: 80vw;
+        margin: 23px auto;
+        background-color: grey;
+       }
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        this is the box
+    </div>
+    <div class="container">
+       <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit facere quasi iusto quam vitae culpa, amet rem unde reiciendis corrupti praesentium. Mollitia soluta amet placeat ipsa quidem vero molestiae dolore dicta, quibusdam iste repudiandae esse maiores dignissimos eos debitis atque assumenda, sunt quae repellat! Assumenda ex nisi ea adipisci omnis magnam quae temporibus illo molestias!<p>
+    </div>
+    <div class="mycont">
+        I am another container
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolores consequatur corporis facere qui quia saepe, quasi quo blanditiis libero neque asperiores voluptates pariatur? Ea, tempore dolores. Obcaecati, quo? Dolore?
+    </div>
+    <div class="lstcont">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque accusamus voluptatibus sapiente rerum ratione molestiae?
+        </p>
+    </div>
+</body>
+</html>
