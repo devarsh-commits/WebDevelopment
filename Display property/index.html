@@ -5,28 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS display Property</title>
     <style>
-        *{
-            padding: 0;
-            margin: 0;
-        }
-.box{
-    border: 2px solid black;
-    display: inline-block;
-    padding: 45px;
-    margin: 34px;
-}
-.box1{
-    display: inline-flex;
-    justify-content:center;
-}
+    *{
+       padding: 0;
+       margin: 0;
+    }
+    .container{
+        border: 2px solid red;
+        width: 80vw;
+        min-height: 80vh;
+        margin:24px auto;
+        background-color: aqua;
+
+    }
+    .container .box1{
+       border: 2px solid red;
+       width: 50vw;
+       min-height: 30vw;
+       margin: 70px auto;
+       background-color: yellow;
+       display:flex;
+       justify-content: center;
+       
+    }
+    .container .box2{
+       border: 2px solid red;
+       width: 50vw;
+       min-height: 30vw;
+       margin: 70px auto;
+       background-color:yellow;
+       display: inline-block;
+    }
+
+
     </style>
 </head>
 <body>
-    <div class="box box1">
-        i am a box
+    <div class="container">
+        <div class="box1"><p>Contents should be placed in box 1</p></div>
+        <div class="box2"><p>Contents should be placed in box 2</p></div>
     </div>
-    <div class="box"> But I am Empty</div>
-    <span>I am a good boy</span>
-    <span>I konow it</span>
 </body>
 </html>
