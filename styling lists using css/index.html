@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling lists-through css</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: ;
+        }
+        body{
+            background-color: azure;
+        }
+        .header  {
+            text-align: center;
+            border: 2px solid black;
+            width: 100vw;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin: 5px;
+            padding: 5px;
+            background-color:aquamarine;
+            color:red;
+            box-sizing: border-box;
+            font-weight: 45px;
+            box-shadow: 5px 5px 15px -1px grey;
+        }
+        .header .container .box{
+            list-style: none;
+            display: inline-flex;
+            padding:5px;
+            margin:5px auto;
+        }
+        .home .container {
+            border: 1px solid black;
+            width: 100vw;
+            min-height: 50vh;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 15px 5px grey;
+            margin-top: 24px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 24px;
+            background-color:aquamarine
+        }
+        .home .container .box{
+            border: 1px solid black;
+            width: 20vw;
+            height: 20vw;
+            margin: 24px auto;
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+<!-- header section starts here -->
+<header class="header"> <h1>Shopping Cart</h1>
+<nav class="container">
+    <ul>
+        <li class="box">Home</li>
+        <li class="box">About</li>    
+        <li class="box">Contact us</li>
+        <li class="box">Privacy Policy</li>
+    
+    </ul>
+</nav>
+</header>
+<!-- header section ends here -->
+ 
+
+<!-- home section starts here -->
+<section class="home">
+<h3 class="Deals">Our latest fashion deals</h3>
+<div class="container">
+    <div class="box">img1</div>
+    <div class="box">img2</div>
+    <div class="box">img3</div>
+    <div class="box">img4</div>
+    <div class="box">img5</div>
+    <div class="box">img6</div>
+</div>
+<div class="button"></div>
+</section>
+
+
+
+
+
+
+
+ <!-- home section ends here -->
+</body>
+</html>
