@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --color:green;
+            --seccolor:limegreen;
+            --defpad:10px;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            background-color: var(--color);
+        }
+        nav ul{
+            display: flex;
+            list-style: none;
+        }
+        nav ul li{
+            margin: 20px;
+            color: wheat;
+        }
+        .content{
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>home</li>
+            <li>About us</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sint neque quas, necessitatibus quam, perferendis pariatur quibusdam sit repellendus nulla consequuntur eligendi aliquid rem mollitia voluptatum nisi doloribus, vero voluptate est iste. Consectetur nemo facilis quia, nesciunt ipsam ratione praesentium deleniti quae, hic, nihil dolorem?
+    </div>
+</body>
+</html>
