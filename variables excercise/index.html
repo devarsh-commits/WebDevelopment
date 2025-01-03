@@ -12,9 +12,9 @@
         :root{
             --color:green;
             --seccolor:darkgreen;
-            --bodycolor:grey;
+            --bodycolor:rgb(255, 244, 244);
             --hovcolor:yellow;
-            --defpad:5px;
+            --defpad:12px;
             defmar:5px;
         }
         .heading{
@@ -29,13 +29,57 @@
         }
         nav{
             background-color: var(--seccolor);
+            position: relative;
 
         }
         nav ul{
             display: flex;
             justify-content: space-around;
+            padding: var(--defpad);
+            color: whitesmoke;
         }
+        nav ul li{
+            list-style: none;
+        }
+        nav ul li:hover{
+            background-color: var(--hovcolor);
+            padding: 0px 15px;
+            color: black;
+        }
+        body{
+            background-color: var(--bodycolor);
+        }
+        .image{
+            display: inline-block;
+        }
+        .image img{
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px 5px grey;
 
+        }
+        .image p{
+            font-family:sans-serif;
+            padding: 5px;
+            margin: 0px 30px;
+        }
+        .aboutme{
+            display:inline-block;
+        }
+        .aboutme p{
+            border: 2px solid black;
+            width: 45vw;
+            min-height: 44vh;
+            margin-left: 60px;
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 10px;
+            position: absolute;
+            top:100px;
+            font-size:20px
+            
+        }
+       
     </style>
 </head>
 <body>
@@ -48,5 +92,12 @@
 
         </ul>
     </nav>
+    <div class="image">
+        <img src="image.png" alt="" width="255px">
+        <p>Devarsh Dubey  [Developer]</p>
+    </div>
+    <article class="aboutme"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui earum assumenda, aliquam consequatur maxime accusamus necessitatibus fugiat, temporibus laborum quisquam aliquid. Asperiores cupiditate soluta quam quis animi quisquam in ipsam ratione accusantium corporis placeat ipsa et quos minus beatae iusto praesentium nostrum, qui cum?</p>
+        
+    </article>
 </body>
 </html>
