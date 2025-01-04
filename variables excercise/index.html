@@ -50,10 +50,13 @@
             background-color: var(--bodycolor);
         }
         .image{
-            display: inline-block;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            /* margin: 5px 250px; */
         }
         .image img{
-            margin: 10px;
+            margin: 10px auto;
             border-radius: 10px;
             box-shadow: 5px 5px 15px 5px grey;
 
@@ -61,23 +64,61 @@
         .image p{
             font-family:sans-serif;
             padding: 5px;
-            margin: 0px 30px;
+            margin: 10px auto;
         }
-        .aboutme{
-            display:inline-block;
+        .aboutme h2{
+          text-align: center;
         }
         .aboutme p{
             border: 2px solid black;
-            width: 45vw;
-            min-height: 44vh;
-            margin-left: 60px;
-            margin-top: 15px;
+            width: 60vw;
+            margin:20px auto ;
             padding: 10px;
             border-radius: 10px;
-            position: absolute;
-            top:100px;
             font-size:20px
             
+        }
+        @media only screen and (max-width:455px){
+            .heading{
+                width: 100vw;
+                height: 25px;
+            }
+            h1{
+                font-size: medium;
+            }
+            nav{
+                width: 100vw;
+             font-size: smaller;
+
+            }
+            .image{
+                display: block;
+            }
+            .image img{
+                width:50%;
+                margin:10px 100px
+            }
+            .image p{
+                font-size: medium;
+                margin: 10px 100px;
+            }
+            .aboutme h2{
+                display: block;
+                font-size: 1.5em;
+                font-weight: bold;
+                text-align: center;
+                
+
+            }
+            .aboutme p{
+                width: 70vw;
+                min-height: 30vh;
+                position: relative;
+                top: 10px;
+            }
+            
+            
+
         }
        
     </style>
@@ -96,7 +137,8 @@
         <img src="image.png" alt="" width="255px">
         <p>Devarsh Dubey  [Developer]</p>
     </div>
-    <article class="aboutme"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui earum assumenda, aliquam consequatur maxime accusamus necessitatibus fugiat, temporibus laborum quisquam aliquid. Asperiores cupiditate soluta quam quis animi quisquam in ipsam ratione accusantium corporis placeat ipsa et quos minus beatae iusto praesentium nostrum, qui cum?</p>
+    <article class="aboutme"><h2>About US</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque qui earum assumenda, aliquam consequatur maxime accusamus necessitatibus fugiat, temporibus laborum quisquam aliquid. Asperiores cupiditate soluta quam quis animi quisquam in ipsam ratione accusantium corporis placeat ipsa et quos minus beatae iusto praesentium nostrum, qui cum?</p>
         
     </article>
 </body>

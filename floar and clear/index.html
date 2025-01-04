@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float and clear</title>
+    <style>
+        .main{
+            border: 2px solid black;
+            display: flow-root;
+        }
+        .box{
+            border: 2px solid red;
+        }
+        .main img{
+            float: left;
+        }
+        .box:nth-child(3){
+            clear: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="image.png" width="200">
+        <diV class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, molestias.</diV>
+        <diV class="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis sed aliquam ea placeat minima laudantium cum ipsa voluptas amet aut!</diV>
+        <diV class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ipsum cupiditate, quam blanditiis vero alias doloremque ipsam eaque nemo. Tempore, aliquam cum. Repellat, eaque nam quasi quos pariatur illo distinctio?</diV>
+    </div>
+</body>
+</html>
