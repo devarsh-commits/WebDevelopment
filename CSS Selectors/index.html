@@ -8,17 +8,31 @@
         .box:first-child{
             background-color: red;
         }
-        .box:nth-child(even){
+        .box:nth-child(odd){
             background-color: aqua;
         }
         .box::first-line{
             color: yellow;
         }
-        [data-color="primary"]{
+        .box , p,a ,h1 [data-color="primary"]{
             padding-top: 25px;
         }
         div *{
             border: 2px solid black;
+            margin: 5px;
+        }
+        .boxes::before{
+            content: "Devarsh is great";
+        }
+        .boxes::after{
+            content: "This is gonna be great year";
+            color: red;
+            border: 2px solid red;
+            margin-top: 50px;
+        }
+        ::selection{
+            background-color: yellow;
+            color: black;
         }
     </style>
 </head>

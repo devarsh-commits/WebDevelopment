@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Bhai ka design</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@1,400;1,600&display=swap');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        :root {
+            --maincolor: rgba(232, 80, 246, 0.968);
+            --seccolor: rgba(233, 182, 237, 0.968);
+            --textcolor: white;
+            --contcolor:rgb(237, 221, 221);
+
+        }
+        .head{
+            background-color: var(--maincolor);
+            width: 100vw;
+            color: var(--textcolor);
+            font-weight: bold;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header {
+            background-color: var(--maincolor);
+            width: 100vw;
+            position: sticky;
+            top: 0px;
+        }
+        header h1{
+            color: var(--textcolor);
+            font-weight: bold;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            color: var(--textcolor);
+            font-weight: bold;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+
+        }
+        li:hover{
+            color: yellow;
+            animation: forwards;
+        }
+        body{
+            background-color: var(--seccolor);
+        }
+        .container{
+            border: 2px solid black;
+            width: 90vw;
+            height: 50vh;
+            margin:10px auto;
+            background-color: var(--contcolor);
+            box-shadow: 5px 5px 15px 5px grey;
+            display: flex;
+            padding: 10px;
+        }
+        .container .box{
+            margin: 30px auto;
+        }
+        .container .box iframe{
+          width:40vw;
+          height:37vh ;
+        }
+        article{
+            border: 2px solid black;
+            width: 80vw;
+            min-height: 30vh;
+            margin: 10px auto;
+            border-radius: 35px;
+            /* text-align: center; */
+        }
+        article h2{
+            text-align: center;
+            padding: 10px;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            font-weight: bolder;
+            
+        }
+        p:nth-child(2){
+            text-align: center;
+            padding: 10px;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .logo{
+            border: 2px solid red;
+            width: 40px;
+            height: 5vh;
+            border-radius: 20px;
+            position: fixed;
+            top:435px;
+            right:38px;
+            background-color: yellow;
+
+        }
+        footer{
+            background-color: var(--maincolor);
+            width: 100vw;
+            color: var(--textcolor);
+            font-weight: bold;
+            font-family: "Baloo 2", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="head"><h1>Code With Devarsh</h1></section>
+    <!-- header section starts here -->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact us</li>
+                <li>Read more</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header section ends here -->
+     <div class="container">
+        <div class="box"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=ZuE1G5ivp8mzcl1c&amp;list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        <div class="box"><iframe width="560" height="315" src="https://www.youtube.com/embed/8Hk4MmO9ZeQ?si=N-T_FkpkuVSW5--s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+     </div>
+     <article><h2>Welcome To This Sigma Web Development Course</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum perspiciatis saepe iure dolore, temporibus autem omnis hic magni pariatur numquam fugiat, magnam corrupti perferendis, minima voluptate quo facilis vero commodi. Officia accusamus similique dolores?</p>
+</article>
+<div class="logo"></div>
+
+<!-- footer section starts here -->
+<footer>
+    ALL RIGHTS RESERVED | MR.DEVARSH DUBEY 2025
+</footer>
+</body>
+
+</html>
