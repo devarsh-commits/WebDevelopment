@@ -7,27 +7,48 @@
     <style>
         .container{
             border: 2px solid black;
-            width: 90vw;
-            height: 45vh;
-            margin: 5px auto;
             display: grid;
             grid-template-rows: 100px 100px 100px;
-            grid-template-columns: 100px 100px 100px 100px 100px;
+            /* grid-template-columns: 100px 100px 100px ; */
+         grid-template-areas: "nav nav nav "
+         "article cont cont"
+         "footer footer footer";
         }
         .box{
           border: 2px solid red;
+          /* width: 65px;
+          height: 65px; */
+        }
+        .item1{
+            grid-area: nav;
+            background-color: aqua;
+        }
+        .item2{
+            grid-area:article ;
+            background-color:yellowgreen;
+        }
+        .item3{
+            grid-area: cont;
+            background-color: blueviolet;
+        }
+        .item4{
+            grid-area: footer;
+            background-color: brown;
+        }
+        .item5{
+            grid-area: nav;
         }
     </style>
 </head>
 <body>
-    <main>
+ 
         <div class="container">
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
-          <div class="box"></div>
+          <div class="box item1"></div>
+          <div class="box item2"></div>
+          <div class="box item3"></div>
+          <div class="box item4"></div>
+          <div class="box item5"></div>
         </div>
-    </main>
+  
 </body>
 </html>
