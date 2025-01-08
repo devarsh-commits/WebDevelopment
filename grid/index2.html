@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grids in html</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 90vw;
+            height: 45vh;
+            margin: 5px auto;
+            display: grid;
+            grid-template-rows: 100px 100px 100px;
+            grid-template-columns: 100px 100px 100px 100px 100px;
+        }
+        .box{
+          border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+          <div class="box"></div>
+        </div>
+    </main>
+</body>
+</html>
