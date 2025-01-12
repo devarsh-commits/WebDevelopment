@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tranform</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 100vw;
+            height: 80vh;
+            display: flex;
+            flex-flow: row wrap;
+            align-content:center;
+            gap: 10px;
+            justify-content: center;
+        }
+        .box{
+            border: 2px solid red;
+            width: 20vw;
+            height: 15vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+        .rotate{
+            transform: rotate(0.0turn);
+            transition: cubic-bezier(0.86, 0, 0.07, 1);
+        }
+        .box:hover .rotate{
+            transform: rotate(0.25turn);
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box rotate">rotate</div>
+        <div class="box">Scale X</div>
+        <div class="box">Scale Y</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+      
+    </div>
+</body>
+</html>
