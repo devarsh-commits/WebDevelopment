@@ -25,11 +25,21 @@
             background-color: aquamarine;
         }
         .rotate{
-            transform: rotate(0.0turn);
-            transition: cubic-bezier(0.86, 0, 0.07, 1);
+            transform: rotate(0deg);
+            transition-property: transform;
+            transition-duration: 3s;
+            transition-timing-function:ease-in-out;
+            transition-delay: 0.5s;
         }
-        .box:hover .rotate{
-            transform: rotate(0.25turn);
+        .rotate:hover{
+            transform: rotate(360deg);
+        }
+        .scale{
+            transform: scale(1);
+            transition: transform 0.2s ease-in 0.1s;
+        }
+        .scale:hover{
+            transform: scale(1.5);
         }
       
     </style>
@@ -37,7 +47,7 @@
 <body>
     <div class="container">
         <div class="box rotate">rotate</div>
-        <div class="box">Scale X</div>
+        <div class="box scale">Scale X</div>
         <div class="box">Scale Y</div>
         <div class="box">box</div>
         <div class="box">box</div>

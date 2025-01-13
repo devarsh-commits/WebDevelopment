@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animations</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            width: 80vw;
+            height: 60vh;
+            background-color: cadetblue;
+
+        }
+        .box{
+            /* border: 2px solid red; */
+            width: 60px;
+            height: 60px;
+            background-color: red;
+            animation-name: devkaanimation;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            /* animation-direction:alternate-reverse; */
+            animation-play-state: pause;
+        }
+        @keyframes devkaanimation{
+            from{
+background-color: red;
+            }
+            to{
+                transform:translateX(250px);
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box"></div>
+  </div>  
+</body>
+</html>
