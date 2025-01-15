@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Filters</title>
+    <style>
+        .container {
+            /* border: 2px solid red; */
+            width: 90vw;
+            height: 90vh;
+            background-color: aquamarine;
+            position: relative;
+        }
+
+        .ball {
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+           animation: floatingballx 3s linear infinite alternate, y 1s ease-in-out infinite alternate;
+
+
+        }
+
+        @keyframes floatingballx {
+            from {
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        @keyframes y{
+            from{
+                top: 0;
+            }
+            to{
+                top:100%
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
