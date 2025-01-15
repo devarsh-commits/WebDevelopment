@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and object position</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            width: 500px;
+            height: 500px;
+            background-image: url(https://media.istockphoto.com/id/1375913527/photo/excited-girl-with-wings-flying-on-cloud-doodle-drawing-on-blue-background-concept-of.jpg?s=2048x2048&w=is&k=20&c=igALDARrY8tRyeifri9lGLZPWwegLIQa2KD7w5M0Yo4=);
+            background-position: center center ;
+            background-repeat: repeat;
+              }
+
+        img{
+            width: 500px;
+            height: 500px;
+            /* object-fit: contain; */
+            object-fit: cover;
+            /* object-position: top right; */
+            object-position: bottom left;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://media.istockphoto.com/id/1375913527/photo/excited-girl-with-wings-flying-on-cloud-doodle-drawing-on-blue-background-concept-of.jpg?s=2048x2048&w=is&k=20&c=igALDARrY8tRyeifri9lGLZPWwegLIQa2KD7w5M0Yo4=" alt=""> -->
+    </div>
+</body>
+</html>

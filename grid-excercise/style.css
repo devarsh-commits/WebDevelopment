@@ -111,7 +111,7 @@ height: 8vw;
     font-size: large;
     text-align: center;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     font-size: 1.5em;
     margin: 10px 0px;
@@ -121,26 +121,26 @@ height: 8vw;
     /* border: 2px solid red; */
     width: 100vw;
     min-height: 85vh;
-    display: grid;
-    grid-template-areas: 'box1 box1 box2';
-    justify-items: center;
-    
-
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 .upperbody .container2 .box1{
-    box-sizing: border-box;
-    grid-area: box1;
-    width: 100%;;
-    /* border: 2px solid green; */
-    background-color: rgba(127, 119, 119, 0.599);
-
+    /* border: 2px solid red; */
+    width: 40vw;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.597)
 }
 .upperbody .container2 .box2{
-    box-sizing: border-box;
-    grid-area: box2;
-    width: 100%;
-    background-color: rgba(232, 238, 242, 0.608);
-
+    /* border: 2px solid red; */
+    width: 20vw;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: rgba(147, 205, 209, 0.522);
 }
+
+
 
 
