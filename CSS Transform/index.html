@@ -24,15 +24,16 @@
             align-items: center;
             background-color: aquamarine;
         }
-        .rotate{
+        /* .rotate{
             transform: rotate(0deg);
             transition-property: transform;
             transition-duration: 3s;
             transition-timing-function:ease-in-out;
             transition-delay: 0.5s;
-        }
+        } */
         .rotate:hover{
             transform: rotate(360deg);
+            transition: transform 3s ease-in 0.1s;
         }
         .scale{
             transform: scale(1);
@@ -40,6 +41,14 @@
         }
         .scale:hover{
             transform: scale(1.5);
+        }
+        @keyframes devanima{
+            from{
+
+            }
+            to{
+                transform: scale(1.2);
+            }
         }
       
     </style>

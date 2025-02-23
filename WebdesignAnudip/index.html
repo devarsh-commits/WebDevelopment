@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Awareness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background: url('' https: //images.unsplash.com/photo-1554774853-bc888c2f4f52'') no-repeat center center/cover; /* Background Image */
+            }
+
+            .shine-effect:hover {
+                box-shadow: 0 0 15px rgba(255, 192, 203, 0.9);
+                /* Pink Shine Effect */
+            }
+            .symptoms{
+                /* border: 2px solid black; */
+                text-align: center;
+                padding: 5px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 2px 2px 15px 2px grey;
+                
+            }
+            .symptoms h1{
+                text-align: center;
+                font-weight: bold;
+            }
+            .container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+                
+            }
+            .box{
+                border: 2px solid black;
+                width: 80vw;
+                height: 5vh;
+                margin: 5px auto;
+                padding: 5px;
+                border-radius: 5px;
+
+            }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen flex-col">
+
+    <!-- Hero Section -->
+    <div class="text-center mb-6">
+        <h1 class="text-4xl font-bold text-gray-800">Mental Health Awareness</h1>
+        <p class="text-lg text-gray-600 mt-2">Your mental health matters. Explore resources below.</p>
+    </div>
+
+    <!-- Mental Health Button -->
+    <button id="mentalHealthBtn" class="bg-pink-500 text-white px-6 py-3 text-lg rounded-lg shadow-lg shine-effect">
+        Mental Health
+    </button>
+
+    <!-- Options Container (Hidden Initially) -->
+    <div id="options" class="hidden mt-6 space-y-4">
+
+        <!-- Depression Section -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Depression</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <div class="symptoms">
+                <h1>Symptoms</h1><div class="container"> <div class="box">Changes in Appetite and Weight</div>
+                <div class="box">Lack of energy</div>
+                <div class="box">Loss of interest in activities</div>
+                <div class="box">Difficulty concentrating</div></div>
+            </div>
+            <p class="text-gray-700">Depression is a serious mental illness that negatively affects how you feel, think,
+                and act. Seeking help is important.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/Ii53BtHLnGk?feature=shared dipression</div>
+        </div>
+
+        <!-- OCD Section -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">OCD</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <p class="text-gray-700">Obsessive-Compulsive Disorder (OCD) is a condition where people get caught in a
+                cycle of obsessions and compulsions.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/DhlRgwdDc-E?feature=shared OCD</div>
+        </div>
+
+        <!-- Anxiety Section -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Anxiety</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
+                can help manage symptoms.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+        </div>
+        <!-- adhd section -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">ADHD</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
+                can help manage symptoms.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+        </div>
+        <!-- ptsd section starts here -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">PTSD</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
+                can help manage symptoms.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+        </div>
+        <!-- stress section starts here -->
+        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Stress</button>
+        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
+            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
+                can help manage symptoms.</p>
+            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
+                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Button Actions -->
+    <script>
+        document.getElementById('mentalHealthBtn').addEventListener('click', function () {
+            document.getElementById('options').classList.toggle('hidden');
+        });
+
+        document.querySelectorAll('.toggleBtn').forEach((btn, index) => {
+            btn.addEventListener('click', function () {
+                let infoBlocks = document.querySelectorAll('.info');
+                infoBlocks[index].classList.toggle('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
