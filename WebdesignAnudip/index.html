@@ -7,42 +7,55 @@
     <title>Mental Health Awareness</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            background: url('' https: //images.unsplash.com/photo-1554774853-bc888c2f4f52'') no-repeat center center/cover; /* Background Image */
-            }
+        body{
+          background: url(https://img.freepik.com/free-vector/abstract-boho-blurred-background_17005-1844.jpg?t=st=1740338119~exp=1740341719~hmac=5a5c4f9895b080bafe4671ea1137f75846556296eb6765aca7f83fb747203c08&w=900);
+          width: max(100vw);
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
 
             .shine-effect:hover {
                 box-shadow: 0 0 15px rgba(255, 192, 203, 0.9);
                 /* Pink Shine Effect */
             }
-            .symptoms{
+
+            .symptoms {
                 /* border: 2px solid black; */
                 text-align: center;
                 padding: 5px;
                 margin-bottom: 20px;
                 border-radius: 5px;
                 box-shadow: 2px 2px 15px 2px grey;
-                
+
             }
-            .symptoms h1{
+
+            .symptoms h1 {
                 text-align: center;
                 font-weight: bold;
             }
-            .container{
+
+            .container {
                 display: flex;
                 flex-wrap: wrap;
                 gap: 10px;
                 justify-content: center;
-                
+
             }
-            .box{
-                border: 2px solid black;
+
+            .box {
+                border: 2px solid rgb(60, 216, 60);
                 width: 80vw;
-                height: 5vh;
+                min-height: 5vh;
                 margin: 5px auto;
                 padding: 5px;
                 border-radius: 5px;
 
+            }
+            .vdo iframe{
+                /* border: 2px solid red; */
+                width: 290px;
+                height: 100px;
+                
             }
     </style>
 </head>
@@ -67,57 +80,90 @@
         <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Depression</button>
         <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
             <div class="symptoms">
-                <h1>Symptoms</h1><div class="container"> <div class="box">Changes in Appetite and Weight</div>
-                <div class="box">Lack of energy</div>
-                <div class="box">Loss of interest in activities</div>
-                <div class="box">Difficulty concentrating</div></div>
+                <h1>Symptoms</h1>
+                <div class="container">
+                    <div class="box">Changes in Appetite and Weight</div>
+                    <div class="box">Lack of energy</div>
+                    <div class="box">Loss of interest in activities</div>
+                    <div class="box">Difficulty concentrating</div>
+                </div>
             </div>
             <p class="text-gray-700">Depression is a serious mental illness that negatively affects how you feel, think,
                 and act. Seeking help is important.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/Ii53BtHLnGk?feature=shared dipression</div>
+               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Ii53BtHLnGk?si=CHJ7p4GDFDsAR6t9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </div>
 
         <!-- OCD Section -->
         <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">OCD</button>
         <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
-            <p class="text-gray-700">Obsessive-Compulsive Disorder (OCD) is a condition where people get caught in a
-                cycle of obsessions and compulsions.</p>
+            <div class="symptoms">
+                <h1>Symptoms</h1>
+                <div class="container">
+                    <div class="box">Repetitive thoughts or fears </div>
+                    <div class="box">Engaging in repetitive behaviors </div>
+                    <div class="box">Distress when routines are disrupted</div>
+                    <div class="box">Difficulty controlling intrusive thoughts</div>
+                </div>
+            </div>
+            <p class="text-gray-700">OCD is a disorder where people have intrusive thoughts (obsessions) and feel the urge to perform repetitive behaviors (compulsions) to reduce anxiety.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/DhlRgwdDc-E?feature=shared OCD</div>
-        </div>
-
-        <!-- Anxiety Section -->
-        <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Anxiety</button>
-        <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
-            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
-                can help manage symptoms.</p>
-            <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+               <div class="vdo"><iframe width="560" height="315" src="https://www.youtube.com/embed/DhlRgwdDc-E?si=QkbAVGPMSZzz6ObP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </div>
         <!-- adhd section -->
         <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">ADHD</button>
         <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
-            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
-                can help manage symptoms.</p>
+            <div class="symptoms">
+                <h1>Symptoms</h1>
+                <div class="container">
+                    <div class="box">Difficulty focusing or staying on task </div>
+                    <div class="box">Forgetfulness and trouble organizing tasks </div>
+                    <div class="box">Easily distracted by surroundings</div>
+                    <div class="box">Trouble completing tasks or following instructions</div>
+                </div>
+            </div>
+            <p class="text-gray-700">ADHD is a neurodevelopmental disorder affecting focus, impulsivity, and hyperactivity. It can impact daily life, work, or studies.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Eqw0K676F5M?si=5ptTSrk80EIetaDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </div>
         <!-- ptsd section starts here -->
         <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">PTSD</button>
         <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
-            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
-                can help manage symptoms.</p>
+            <div class="symptoms">
+                <h1>Symptoms</h1>
+                <div class="container">
+                    <div class="box">Flashbacks or nightmares about the traumatic event </div>
+                    <div class="box">Avoiding situations that trigger memories of the event </div>
+                    <div class="box">Emotional numbness or detachment from others</div>
+                    <div class="box">Hypervigilance (always feeling on edge)</div>
+                </div>
+            </div>
+            <p class="text-gray-700">PTSD develops after experiencing or witnessing a traumatic event, leading to emotional distress and flashbacks.
+            </p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/2KXtlIX_yUs?si=aM5JA3izXuI_fkoZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </div>
         <!-- stress section starts here -->
         <button class="toggleBtn bg-green-500 text-white px-6 py-3 rounded-lg block w-60 mx-auto">Stress</button>
         <div class="info hidden p-4 bg-white shadow-lg rounded-lg w-80 mx-auto">
-            <p class="text-gray-700">Anxiety disorders involve excessive worry or fear. Therapy and self-care strategies
-                can help manage symptoms.</p>
+            <div class="symptoms">
+                <h1>Symptoms</h1>
+                <div class="container">
+                    <div class="box">Sleep disturbances (insomnia or oversleeping)</div>
+                    <div class="box">Fatigue and low energy </div>
+                    <div class="box">Headaches or muscle tension</div>
+                    <div class="box">Irritability or mood swings</div>
+                </div>
+            </div>
+            <p class="text-gray-700">Stress is the body’s response to challenges or demands. It can be triggered by work pressure, personal issues, or major life changes.
+                Symptoms:</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-                https://youtu.be/ZtBlAXo8LsY?feature=shared Anxiety</div>
+               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/WuyPuH9ojCE?si=W-SzSSsX1aPywhWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            </div>
         </div>
     </div>
 
