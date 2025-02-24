@@ -7,56 +7,106 @@
     <title>Mental Health Awareness</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body{
-          background: url(https://img.freepik.com/free-vector/abstract-boho-blurred-background_17005-1844.jpg?t=st=1740338119~exp=1740341719~hmac=5a5c4f9895b080bafe4671ea1137f75846556296eb6765aca7f83fb747203c08&w=900);
-          width: max(100vw);
-          background-size: cover;
-          background-repeat: no-repeat;
+        body {
+            background: url(https://img.freepik.com/free-vector/abstract-boho-blurred-background_17005-1844.jpg?t=st=1740338119~exp=1740341719~hmac=5a5c4f9895b080bafe4671ea1137f75846556296eb6765aca7f83fb747203c08&w=900);
+            width: max(100vw);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
-            .shine-effect:hover {
-                box-shadow: 0 0 15px rgba(255, 192, 203, 0.9);
-                /* Pink Shine Effect */
-            }
+        .shine-effect:hover {
+            box-shadow: 0 0 15px rgba(255, 192, 203, 0.9);
+            /* Pink Shine Effect */
+        }
+
+        .symptoms {
+            /* border: 2px solid black; */
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 15px 2px grey;
+
+        }
+
+        .symptoms h1 {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+
+        }
+
+        .box {
+            border: 2px solid rgb(60, 216, 60);
+            width: 80vw;
+            min-height: 5vh;
+            margin: 5px auto;
+            padding: 5px;
+            border-radius: 5px;
+
+        }
+
+        .vdo iframe {
+            /* border: 2px solid red; */
+            width: 290px;
+            height: 100px;
+
+        }
+
+        @media only screen and (min-width:800px) {
+           
 
             .symptoms {
-                /* border: 2px solid black; */
-                text-align: center;
-                padding: 5px;
-                margin-bottom: 20px;
-                border-radius: 5px;
-                box-shadow: 2px 2px 15px 2px grey;
+                background-color: white;
+                width: 20vw;
+                /* height: 20vh; */
+                position: relative;
+                left: 354px;
+                bottom: 50px;
+                margin-top: 20px;
 
             }
 
-            .symptoms h1 {
-                text-align: center;
-                font-weight: bold;
-            }
-
-            .container {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                justify-content: center;
+            .symptoms .box {
+                font-size: 0.8em;
+                min-width: 5vw;
+                height: 2vh;
 
             }
 
-            .box {
-                border: 2px solid rgb(60, 216, 60);
-                width: 80vw;
-                min-height: 5vh;
-                margin: 5px auto;
-                padding: 5px;
-                border-radius: 5px;
-
+            .vdo {
+                position: relative;
+                bottom: -24px;
+                left: -387px;
             }
             .vdo iframe{
-                /* border: 2px solid red; */
-                width: 290px;
-                height: 100px;
-                
+                height: 180px;
             }
+
+            .info {
+                height: 180px;
+                position: relative;
+                text-align: center;
+            }
+
+            .text-gray-700 {
+                position: absolute;
+                top: 5px;
+                z-index: 1;
+            }
+
+            .bg-gray-200 {
+                position: absolute;
+                top: 5px;
+                z-index: -1;
+            }
+        }
     </style>
 </head>
 
@@ -91,7 +141,11 @@
             <p class="text-gray-700">Depression is a serious mental illness that negatively affects how you feel, think,
                 and act. Seeking help is important.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Ii53BtHLnGk?si=CHJ7p4GDFDsAR6t9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="vdo"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Ii53BtHLnGk?si=CHJ7p4GDFDsAR6t9" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
 
@@ -107,9 +161,14 @@
                     <div class="box">Difficulty controlling intrusive thoughts</div>
                 </div>
             </div>
-            <p class="text-gray-700">OCD is a disorder where people have intrusive thoughts (obsessions) and feel the urge to perform repetitive behaviors (compulsions) to reduce anxiety.</p>
+            <p class="text-gray-700">OCD is a disorder where people have intrusive thoughts (obsessions) and feel the
+                urge to perform repetitive behaviors (compulsions) to reduce anxiety.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-               <div class="vdo"><iframe width="560" height="315" src="https://www.youtube.com/embed/DhlRgwdDc-E?si=QkbAVGPMSZzz6ObP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="vdo"><iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/DhlRgwdDc-E?si=QkbAVGPMSZzz6ObP" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
         <!-- adhd section -->
@@ -124,9 +183,14 @@
                     <div class="box">Trouble completing tasks or following instructions</div>
                 </div>
             </div>
-            <p class="text-gray-700">ADHD is a neurodevelopmental disorder affecting focus, impulsivity, and hyperactivity. It can impact daily life, work, or studies.</p>
+            <p class="text-gray-700">ADHD is a neurodevelopmental disorder affecting focus, impulsivity, and
+                hyperactivity. It can impact daily life, work, or studies.</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/Eqw0K676F5M?si=5ptTSrk80EIetaDM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="vdo"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/Eqw0K676F5M?si=5ptTSrk80EIetaDM" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
         <!-- ptsd section starts here -->
@@ -141,10 +205,15 @@
                     <div class="box">Hypervigilance (always feeling on edge)</div>
                 </div>
             </div>
-            <p class="text-gray-700">PTSD develops after experiencing or witnessing a traumatic event, leading to emotional distress and flashbacks.
+            <p class="text-gray-700">PTSD develops after experiencing or witnessing a traumatic event, leading to
+                emotional distress and flashbacks.
             </p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/2KXtlIX_yUs?si=aM5JA3izXuI_fkoZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="vdo"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/2KXtlIX_yUs?si=aM5JA3izXuI_fkoZ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
         <!-- stress section starts here -->
@@ -159,10 +228,15 @@
                     <div class="box">Irritability or mood swings</div>
                 </div>
             </div>
-            <p class="text-gray-700">Stress is the body’s response to challenges or demands. It can be triggered by work pressure, personal issues, or major life changes.
+            <p class="text-gray-700">Stress is the body’s response to challenges or demands. It can be triggered by work
+                pressure, personal issues, or major life changes.
                 Symptoms:</p>
             <div class="mt-4 h-20 bg-gray-200 flex items-center justify-center rounded">
-               <div class="vdo"> <iframe width="560" height="315" src="https://www.youtube.com/embed/WuyPuH9ojCE?si=W-SzSSsX1aPywhWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+                <div class="vdo"> <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/WuyPuH9ojCE?si=W-SzSSsX1aPywhWO" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
     </div>
